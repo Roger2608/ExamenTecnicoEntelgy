@@ -12,7 +12,10 @@ public class ExamenEntelgyApplication{
 		SpringApplication.run(ExamenEntelgyApplication.class, args);
 	}
 	
-	
+	@Bean
+	public RestTemplate restTemplate() {
+		return new RestTemplate();
+	}
 	
 	
 }
